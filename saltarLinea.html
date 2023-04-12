@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+
+<script>
+    function saltoDeLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+    function imprimir(frase){
+        document.write(frase);
+        saltoDeLinea();
+
+    }
+
+var anho = 2020;
+ imprimir("Juan tiene :" + (anho-2000)+ "años");
+
+
+imprimir("Pedro tiene :" + (anho-1995)+ "años");
+anho = 2030
+
+    
+ imprimir("Carlos tiene :" + (anho-2005)+ "años");
+
+ 
+
+anho = 2020
+imprimir("Jimena tiene :" + (anho-2010)+ "años");
+    
+
+
+imprimir("Paola tiene :" + (anho-1995)+ "años");
+    
+
+
+imprimir("Laura tiene :" + (anho-2005)+ "años");
+
+
+var edadPaola=25;
+var edadJimena=10;
+var edadLaura=15;
+
+var nombre1 = "Jimena";
+var nombre2 = "Paola";
+var nombre3 = "Laura";
+
+promedio = (edadJimena+edadLaura+edadPaola)/3
+
+imprimir("El promedio de las edades de " + nombre1 + "," +nombre2+ " "+ "y" + " " + nombre3 +" es:" + Math.round(promedio));
+    
+    
+</script>
