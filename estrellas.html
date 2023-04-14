@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1> Programa DE ADIVINANZA DE NUMERO </h1>
+
+<script>
+    function saltoDeLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+    function imprimir(frase){
+        document.write( frase);
+        saltoDeLinea();
+
+    }
+
+    for (var lineas = 1; lineas<= 3; lineas++ ){
+        for( var columnas=1;columnas<=10;columnas++){
+            document.write("*");
+        }
+        saltoDeLinea();
+    }
+    saltoDeLinea();
+    saltoDeLinea();
+
+    imprimir ("fin");
+    
+
+</script>
