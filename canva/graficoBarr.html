@@ -1,12 +1,8 @@
 <canvas width="600" height="400"></canvas>
 
 <script>
-var pantalla = document.querySelector("canvas");
-var pincel = pantalla.getContext("2d");
-pincel.fillStyle = "lightgray";
-pincel.fillRect(0, 0, 600, 400);
 
-function dibujarRectangulo(x, y, base, altura, color) {
+    function dibujarRectangulo(x, y, base, altura, color) {
         var pantalla = document.querySelector("canvas");
         var pincel = pantalla.getContext("2d");
 
@@ -29,22 +25,19 @@ function dibujarRectangulo(x, y, base, altura, color) {
 
         escribirTexto(x, y - 10, texto);
 
-        sumaAltura = 0;
+        var sumaAltura = 0;
         for (var i = 0; i < serie.length; i++) {
             var altura = serie[i];
             dibujarRectangulo(x, y + sumaAltura, 50, altura, colores[i]);
             sumaAltura = sumaAltura + altura;
         }
     }
+
     var colores = ["blue","green","yellow", "red","gray"];
     var serie2009 = [6,47,41,3,3];
     var serie2019 = [81,9,3,3,4];
 
     dibujarBarra(50, 50, serie2009, colores, "2009");
     dibujarBarra(150, 50, serie2019, colores, "2019");
-
-
-
-
 
 </script>
